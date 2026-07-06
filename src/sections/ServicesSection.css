@@ -1,0 +1,85 @@
+.services-section {
+  padding: clamp(60px, 12vw, 100px) clamp(20px, 5vw, 48px);
+  position: relative;
+  z-index: 1;
+}
+
+.services-wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.section-label {
+  font-family: monospace;
+  font-size: clamp(10px, 2vw, 12px);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.services-wrap h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(28px, 5vw, 36px);
+  font-weight: 300;
+  margin: 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 100%, 350px), 1fr));
+  gap: clamp(16px, 3vw, 20px);
+}
+
+.service-card {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: clamp(20px, 4vw, 28px);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  font-size: clamp(24px, 6vw, 30px);
+  margin-bottom: 14px;
+}
+
+.service-card h3 {
+  font-size: clamp(14px, 3vw, 16px);
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.service-card p {
+  font-size: clamp(12px, 2vw, 13px);
+  line-height: 1.75;
+  margin: 0 0 18px;
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.service-tags span {
+  font-size: clamp(8px, 1.5vw, 10px);
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+.service-price {
+  font-size: clamp(12px, 2vw, 13px);
+  font-weight: 700;
+}

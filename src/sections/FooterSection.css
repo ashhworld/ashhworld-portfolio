@@ -1,0 +1,37 @@
+.footer-section {
+  border-top: 1px solid;
+  padding: clamp(20px, 4vw, 28px) clamp(20px, 5vw, 48px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-family: Georgia, serif;
+  font-size: clamp(18px, 4vw, 22px);
+  font-weight: 700;
+}
+
+.footer-copy {
+  font-size: clamp(8px, 2vw, 11px);
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 860px) {
+  .footer-section {
+    justify-content: flex-start;
+  }
+}
